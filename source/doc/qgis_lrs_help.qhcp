@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QHelpCollectionProject version="1.0">
+    <assistant>
+        <title>河川土地利用算定プログラム</title>
+        <applicationIcon>../mainwindow.ico</applicationIcon>
+        <cacheDirectory>qgis_lrs</cacheDirectory>
+        <startPage>qthelp://gov.niaes.qgis.lrs/doc/index.html</startPage>
+        <aboutMenuText>
+            <text>河川土地利用算定プログラムについて</text>
+        </aboutMenuText>
+        <aboutDialog>
+            <file>about.txt</file>
+            <icon>../mainwindow.ico</icon>
+        </aboutDialog>
+        <enableDocumentationManager>false</enableDocumentationManager>
+        <enableAddressBar>false</enableAddressBar>
+        <enableFilterFunctionality>false</enableFilterFunctionality>
+    </assistant>
+    <docFiles>
+        <generate>
+            <file>
+                <input>./qgis_lrs_help.qhp</input>
+                <output>./qgis_lrs_help.qch</output>
+            </file>
+        </generate>
+        <register>
+            <file>qgis_lrs_help.qch</file>
+        </register>
+    </docFiles>
+</QHelpCollectionProject>

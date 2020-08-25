@@ -1,0 +1,32 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icon.png</file>
+    <file>export.png</file>
+    <file>mIconRaster.png</file>
+    <file>databaseTable.png</file>
+    <file>exit.png</file>
+    <file>help.png</file>
+    <file>icon_info.png</file>
+    <file>openhand.png</file>
+    <file>whatsthis.png</file>
+    <file>zoomin.png</file>
+    <file>zoomout.png</file>
+    <file>zoomreset.png</file>
+    <file>fileopen.png</file>
+  </qresource>
+  <qresource prefix="svg">
+    <file>point.svg</file>
+    <file>refpointmaiin.svg</file>
+    <file>refpointsub.svg</file>
+  </qresource>
+  <qresource prefix="html">
+    <file>license.html</file>
+  </qresource>
+  <qresource prefix="image">
+    <file>splash.png</file>
+  </qresource>
+  <qresource prefix="images/themes/default">
+    <file>mActionFolder.svg</file>
+    <file>mIconRaster.svg</file>
+  </qresource>
+</RCC>

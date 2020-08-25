@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ui_PointCsv</class>
+ <widget class="QDialog" name="ui_PointCsv">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>591</width>
+    <height>192</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>座標ファイルを指定</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/icons/icon.png</normaloff>:/icons/icon.png</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>入力ファイル</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_input"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_browseInput">
+       <property name="text">
+        <string>参照</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>出力ファイル</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_output"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_browseOutput">
+       <property name="text">
+        <string>参照</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QPushButton" name="pushButton_export">
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>エクスポート</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_cancel">
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>キャンセル</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_browseInput</sender>
+   <signal>clicked()</signal>
+   <receiver>ui_PointCsv</receiver>
+   <slot>onBrowseInput()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>512</x>
+     <y>42</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>417</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_browseOutput</sender>
+   <signal>clicked()</signal>
+   <receiver>ui_PointCsv</receiver>
+   <slot>onBrowseOutput()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>501</x>
+     <y>87</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>405</x>
+     <y>65</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_export</sender>
+   <signal>clicked()</signal>
+   <receiver>ui_PointCsv</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>158</x>
+     <y>153</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>12</x>
+     <y>142</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_cancel</sender>
+   <signal>clicked()</signal>
+   <receiver>ui_PointCsv</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>432</x>
+     <y>148</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>299</x>
+     <y>134</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>onBrowseInput()</slot>
+  <slot>onBrowseOutput()</slot>
+ </slots>
+</ui>

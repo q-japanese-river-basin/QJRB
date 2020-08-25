@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ファイルを読み込んで指定</title>
+</head>
+<body>
+
+<h1>ファイルを読み込んで指定</h1>
+
+<p>
+土地利用の算定を行うには、マップキャンバス上で算定の起点を指定する方法と地点が記述されたファイルを読み込む方法があります。
+</p>
+<p>
+地点が記録されたファイルを読み込んで、それらの地点について一括して集計を行う場合は以下のボタンを押します。
+</p>
+
+<img src="img/filetool.png" alt="地点ファイルツール" />
+
+<p>
+ボタンを押すと以下のダイアログが表示されますので、入力ファイルと出力ファイルをそれぞれ指定します。
+ファイル指定後、「エクスポート」ボタンを押すと、集計を開始します。
+</p>
+
+<img src="img/filedialog.png" alt="ファイル指定ダイアログ" />
+
+<h2>入力ファイル／出力ファイルのフォーマット</h2>
+
+<p>
+入力ファイルはID、経度、緯度が記述されているCSVファイルである必要があります。また、先頭の１行目はヘッダ行です。
+</p>
+
+<caption>入力ファイルの例：</caption>
+<table cellspacing="0" border="1">
+	<colgroup width="36"></colgroup>
+	<colgroup width="111"></colgroup>
+	<colgroup width="89"></colgroup>
+	<tr>
+		<td height="26" align="left"><font face="Liberation Sans">ID</font></td>
+		<td align="left">経度</td>
+		<td align="left">緯度</td>
+	</tr>
+	<tr>
+		<td height="26" align="right" sdval="1" sdnum="1041;"><font face="Liberation Sans">1</font></td>
+		<td align="right" sdval="139.86931" sdnum="1041;"><font face="Liberation Sans">139.86931</font></td>
+		<td align="right" sdval="35.3316" sdnum="1041;"><font face="Liberation Sans">35.3316</font></td>
+	</tr>
+	<tr>
+		<td height="26" align="right" sdval="2" sdnum="1041;"><font face="Liberation Sans">2</font></td>
+		<td align="right" sdval="139.9289" sdnum="1041;"><font face="Liberation Sans">139.9289</font></td>
+		<td align="right" sdval="35.3777" sdnum="1041;"><font face="Liberation Sans">35.3777</font></td>
+	</tr>
+	<tr>
+		<td height="26" align="right" sdval="3" sdnum="1041;"><font face="Liberation Sans">3</font></td>
+		<td align="right" sdval="139.9535" sdnum="1041;"><font face="Liberation Sans">139.9535</font></td>
+		<td align="right" sdval="35.3981" sdnum="1041;"><font face="Liberation Sans">35.3981</font></td>
+	</tr>
+</table>
+
+
+</body>
+</html>
+
+<p>
+ヘッダに使用される文字列は以下の通りです。プログラムはこれらの文字列がある列をそれぞれID、経度、緯度として読み取ります。
+</p>
+
+<table cellspacing="0" border="0">
+  <tr><td>ID</td><td>：</td><td>「ID」（半角、大文字小文字区別なし）、「番号」</td></tr>
+  <tr><td>経度</td><td>：</td><td>「LON」、「L」（半角、大文字小文字区別なし）、「経度」</td></tr>
+  <tr><td>緯度</td><td>：</td><td>「LAT」、「B」（半角、大文字小文字区別なし）、「緯度」</td></tr>
+</table>
+
+<p>
+検索結果は各行の点に対して列が追加され、それぞれの土地利用集計結果が追加されます。
+また、指定された地点が直近の河川から100m以上離れている場合は「解析範囲外」の文字が追加されます。
+</p>
+
+
+<caption>検索結果出力の例：</caption>
+<table cellspacing="0" border="1">
+	<colgroup width="36"></colgroup>
+	<colgroup width="111"></colgroup>
+	<colgroup width="89"></colgroup>
+	<colgroup width="117"></colgroup>
+	<colgroup width="138"></colgroup>
+	<colgroup width="71"></colgroup>
+	<colgroup width="49"></colgroup>
+	<colgroup width="97"></colgroup>
+	<colgroup span="2" width="56"></colgroup>
+	<colgroup width="138"></colgroup>
+	<colgroup width="158"></colgroup>
+	<colgroup width="56"></colgroup>
+	<colgroup width="77"></colgroup>
+	<colgroup width="97"></colgroup>
+	<colgroup width="117"></colgroup>
+	<tr>
+		<td height="26" align="left"><font face="Liberation Sans">ID</font></td>
+		<td align="left">経度</td>
+		<td align="left">緯度</td>
+		<td align="left">田</td>
+		<td align="left">その他農用地</td>
+		<td align="left">森林</td>
+		<td align="left">荒地</td>
+		<td align="left">建物用地</td>
+		<td align="left">道路</td>
+		<td align="left">鉄道</td>
+		<td align="left">その他の用地</td>
+		<td align="left">河川地及び湖沼</td>
+		<td align="left">海浜</td>
+		<td align="left">海水域</td>
+		<td align="left">ゴルフ場</td>
+		<td align="left">解析範囲外</td>
+	</tr>
+	<tr>
+		<td height="26" align="right" sdval="1" sdnum="1041;"><font face="Liberation Sans">1</font></td>
+		<td align="right" sdval="139.86931" sdnum="1041;"><font face="Liberation Sans">139.86931</font></td>
+		<td align="right" sdval="35.3316" sdnum="1041;"><font face="Liberation Sans">35.3316</font></td>
+		<td align="right" sdval="2271" sdnum="1041;"><font face="Liberation Sans">2271</font></td>
+		<td align="right" sdval="404" sdnum="1041;"><font face="Liberation Sans">404</font></td>
+		<td align="right" sdval="8353" sdnum="1041;"><font face="Liberation Sans">8353</font></td>
+		<td align="right" sdval="442" sdnum="1041;"><font face="Liberation Sans">442</font></td>
+		<td align="right" sdval="498" sdnum="1041;"><font face="Liberation Sans">498</font></td>
+		<td align="right" sdval="12" sdnum="1041;"><font face="Liberation Sans">12</font></td>
+		<td align="right" sdval="0" sdnum="1041;"><font face="Liberation Sans">0</font></td>
+		<td align="right" sdval="21" sdnum="1041;"><font face="Liberation Sans">21</font></td>
+		<td align="right" sdval="184" sdnum="1041;"><font face="Liberation Sans">184</font></td>
+		<td align="right" sdval="0" sdnum="1041;"><font face="Liberation Sans">0</font></td>
+		<td align="right" sdval="0" sdnum="1041;"><font face="Liberation Sans">0</font></td>
+		<td align="right" sdval="218" sdnum="1041;"><font face="Liberation Sans">218</font></td>
+		<td align="right" sdval="0" sdnum="1041;"><font face="Liberation Sans">0</font></td>
+	</tr>
+	<tr>
+		<td height="26" align="right" sdval="2" sdnum="1041;"><font face="Liberation Sans">2</font></td>
+		<td align="right" sdval="139.9289" sdnum="1041;"><font face="Liberation Sans">139.9289</font></td>
+		<td align="right" sdval="35.3777" sdnum="1041;"><font face="Liberation Sans">35.3777</font></td>
+		<td align="right" sdval="249" sdnum="1041;"><font face="Liberation Sans">249</font></td>
+		<td align="right" sdval="380" sdnum="1041;"><font face="Liberation Sans">380</font></td>
+		<td align="right" sdval="1606" sdnum="1041;"><font face="Liberation Sans">1606</font></td>
+		<td align="right" sdval="223" sdnum="1041;"><font face="Liberation Sans">223</font></td>
+		<td align="right" sdval="309" sdnum="1041;"><font face="Liberation Sans">309</font></td>
+		<td align="right" sdval="7" sdnum="1041;"><font face="Liberation Sans">7</font></td>
+		<td align="right" sdval="0" sdnum="1041;"><font face="Liberation Sans">0</font></td>
+		<td align="right" sdval="103" sdnum="1041;"><font face="Liberation Sans">103</font></td>
+		<td align="right" sdval="17" sdnum="1041;"><font face="Liberation Sans">17</font></td>
+		<td align="right" sdval="0" sdnum="1041;"><font face="Liberation Sans">0</font></td>
+		<td align="right" sdval="0" sdnum="1041;"><font face="Liberation Sans">0</font></td>
+		<td align="right" sdval="4" sdnum="1041;"><font face="Liberation Sans">4</font></td>
+		<td align="right" sdval="0" sdnum="1041;"><font face="Liberation Sans">0</font></td>
+	</tr>
+	<tr>
+		<td height="26" align="right" sdval="3" sdnum="1041;"><font face="Liberation Sans">3</font></td>
+		<td align="right" sdval="139.9535" sdnum="1041;"><font face="Liberation Sans">139.9535</font></td>
+		<td align="right" sdval="35.3981" sdnum="1041;"><font face="Liberation Sans">35.3981</font></td>
+		<td align="right" sdval="4349" sdnum="1041;"><font face="Liberation Sans">4349</font></td>
+		<td align="right" sdval="1044" sdnum="1041;"><font face="Liberation Sans">1044</font></td>
+		<td align="right" sdval="16120" sdnum="1041;"><font face="Liberation Sans">16120</font></td>
+		<td align="right" sdval="783" sdnum="1041;"><font face="Liberation Sans">783</font></td>
+		<td align="right" sdval="473" sdnum="1041;"><font face="Liberation Sans">473</font></td>
+		<td align="right" sdval="43" sdnum="1041;"><font face="Liberation Sans">43</font></td>
+		<td align="right" sdval="1" sdnum="1041;"><font face="Liberation Sans">1</font></td>
+		<td align="right" sdval="50" sdnum="1041;"><font face="Liberation Sans">50</font></td>
+		<td align="right" sdval="391" sdnum="1041;"><font face="Liberation Sans">391</font></td>
+		<td align="right" sdval="0" sdnum="1041;"><font face="Liberation Sans">0</font></td>
+		<td align="right" sdval="0" sdnum="1041;"><font face="Liberation Sans">0</font></td>
+		<td align="right" sdval="875" sdnum="1041;"><font face="Liberation Sans">875</font></td>
+		<td align="right" sdval="0" sdnum="1041;"><font face="Liberation Sans">0</font></td>
+	</tr>
+	<tr>
+		<td height="26" align="right" sdval="4" sdnum="1041;"><font face="Liberation Sans">4</font></td>
+		<td align="right" sdval="139.9556" sdnum="1041;"><font face="Liberation Sans">139.9556</font></td>
+		<td align="right" sdval="35.2382" sdnum="1041;"><font face="Liberation Sans">35.2382</font></td>
+		<td align="left">解析範囲外</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+</table>
+
+</html>

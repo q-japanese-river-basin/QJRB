@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_3.0|Win32">
+      <Configuration>Debug_3.0</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_3.0|Win32">
+      <Configuration>Release_3.0</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_new|Win32">
+      <Configuration>Release_new</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6F1F8B5F-624F-4186-8FCA-74F1C5EE098E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>qgis_lrs</RootNamespace>
+    <ProjectName>qgis_lrs</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_USE_MATH_DEFINES;SPATIALITE_412_OR_LATER;HAVE_SPATIALITE;_DEBUG;_WINDOWS;QT_GUI_LIB;QT_CORE_LIB;QT_DEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;CORE_EXPORT=__declspec(dllimport);GUI_EXPORT=__declspec(dllimport);noexcept=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\dev\qgis2.18.12\include;C:\OSGeo4W\include\qt4\QtCore;C:\OSGeo4W\include\qt4\QtGui;C:\OSGeo4W\include\qt4\QtXml;C:\OSGeo4W\include\qt4\QtSvg;C:\OSGeo4W\include\qt4;C:\OSGeo4W\include;C:\OSGeo4W\include\qt4\QtNetwork;C:\OSGeo4W\include\qt4\QtSql;C:\OSGeo4W\include\qt4\QtCrypto</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\OSGeo4W\lib;C:\dev\qgis2.18.12\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>QtCored4.lib;QtGuid4.lib;QtXmld4.lib;qtmaind.lib;qgis_core.lib;qgis_gui.lib;spatialite_i.lib;sqlite3_i.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>C:\dev\qgis2.18.12\bin\qgis_lrs.exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_USE_MATH_DEFINES;SPATIALITE_412_OR_LATER;HAVE_SPATIALITE;ENABLE_BGMAP;_DEBUG;_WINDOWS;QT_GUI_LIB;QT_CORE_LIB;QT_DEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;CORE_EXPORT=__declspec(dllimport);GUI_EXPORT=__declspec(dllimport);NATIVE_EXPORT=__declspec(dllimport);ANALYSIS_EXPORT=__declspec(dllimport);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\dev\qgis3.10.0_debug\include;D:\OSGeo4W\apps\Qt5\include\QtCore;D:\OSGeo4W\apps\Qt5\include\QtGui;D:\OSGeo4W\apps\Qt5\include\QtXml;D:\OSGeo4W\apps\Qt5\include\QtSvg;D:\OSGeo4W\apps\Qt5\include;D:\OSGeo4W\include;D:\OSGeo4W\apps\Qt5\include\QtNetwork;D:\OSGeo4W\apps\Qt5\include\QtSql;D:\OSGeo4W\apps\Qt5\include\QtCrypto;D:\OSGeo4W\apps\Qt5\include\QtWidgets;D:\OSGeo4W\apps\Qt5\include\qt5keychain</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\dev\qgis3.10.0_debug\lib;D:\OSGeo4W\lib;D:\OSGeo4W\apps\Qt5\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Qt5Cored.lib;Qt5Guid.lib;Qt5Xmld.lib;Qt5Widgetsd.lib;qtmaind.lib;qgis_core.lib;qgis_gui.lib;qgis_native.lib;qgis_analysis.lib;spatialite_i.lib;sqlite3_i.lib;gdal_i.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>D:\dev\qgis3.10.0_debug\bin\qgis_lrs.exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>WIN32;_USE_MATH_DEFINES;SPATIALITE_412_OR_LATER;HAVE_SPATIALITE;ENABLE_BGMAP;_WINDOWS;QT_GUI_LIB;QT_CORE_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;CORE_EXPORT=__declspec(dllimport);GUI_EXPORT=__declspec(dllimport);NATIVE_EXPORT=__declspec(dllimport);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\OSGeo4W\apps\qgis\include;D:\OSGeo4W\include;D:\OSGeo4W\apps\Qt5\include;D:\OSGeo4W\apps\Qt5\include\QtCore;D:\OSGeo4W\apps\Qt5\include\QtGui;D:\OSGeo4W\apps\Qt5\include\QtXml;D:\OSGeo4W\apps\Qt5\include\QtSvg;D:\OSGeo4W\apps\Qt5\include\QtNetwork;D:\OSGeo4W\apps\Qt5\include\QtSql;D:\OSGeo4W\apps\Qt5\include\QtCrypto;D:\OSGeo4W\apps\Qt5\include\QtWidgets;D:\OSGeo4W\apps\Qt5\include\qt5keychain;D:\Documents\Visual Studio 2013\Projects\qgis_lrs\qgis_lrs</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BasicRuntimeChecks />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\OSGeo4W\apps\qgis\lib;D:\OSGeo4W\lib;D:\OSGeo4W\apps\Qt5\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Xml.lib;Qt5Widgets.lib;qtmain.lib;qgis_core.lib;qgis_gui.lib;spatialite_i.lib;sqlite3_i.lib;gdal_i.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_USE_MATH_DEFINES;SPATIALITE_412_OR_LATER;HAVE_SPATIALITE;_WINDOWS;NDEBUGQT_GUI_LIB;QT_CORE_LIB;QT_NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_SECURE_SCL=0;CORE_EXPORT=__declspec(dllimport);GUI_EXPORT=__declspec(dllimport);ENABLE_BGMAP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\OSGeo4W\apps\qgis\include;C:\OSGeo4W\include\qt4\QtCore;C:\OSGeo4W\include\qt4\QtGui;C:\OSGeo4W\include\qt4\QtXml;C:\OSGeo4W\include\qt4\QtSvg;C:\OSGeo4W\include\qt4;C:\OSGeo4W\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\OSGeo4W\lib;C:\OSGeo4W\apps\qgis\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>QtCore4.lib;QtGui4.lib;QtXml4.lib;qtmain.lib;qgis_core.lib;qgis_gui.lib;spatialite_i.lib;sqlite3_i.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>C:\share\qgis_lrs\ex\qgis\bin\qgis_lrs.exe</OutputFile>
+      <LinkTimeCodeGeneration />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_USE_MATH_DEFINES;SPATIALITE_412_OR_LATER;HAVE_SPATIALITE;_WINDOWS;NDEBUGQT_GUI_LIB;QT_CORE_LIB;QT_NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_SECURE_SCL=0;CORE_EXPORT=__declspec(dllimport);GUI_EXPORT=__declspec(dllimport);ENABLE_BGMAP;noexcept=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\OSGeo4W\apps\qgis\include;C:\OSGeo4W\include\qt4\QtCore;C:\OSGeo4W\include\qt4\QtGui;C:\OSGeo4W\include\qt4\QtXml;C:\OSGeo4W\include\qt4\QtSvg;C:\OSGeo4W\include\qt4;C:\OSGeo4W\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\OSGeo4W\lib;C:\OSGeo4W\apps\qgis\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>QtCore4.lib;QtGui4.lib;QtXml4.lib;qtmain.lib;qgis_core.lib;qgis_gui.lib;spatialite_i.lib;sqlite3_i.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DlgPointCsv.cpp" />
+    <ClCompile Include="generated\moc_DlgPointCsv.cpp" />
+    <ClCompile Include="generated\moc_MapToolSelect.cpp" />
+    <ClCompile Include="generated\moc_MyMainWindow.cpp" />
+    <ClCompile Include="generated\moc_MyMapCanvas.cpp" />
+    <ClCompile Include="generated\moc_QueryManage.cpp" />
+    <ClCompile Include="generated\res_resource.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MapToolSelect.cpp" />
+    <ClCompile Include="MyAssistant.cpp" />
+    <ClCompile Include="MyMainWindow.cpp" />
+    <ClCompile Include="MyMapCanvas.cpp" />
+    <ClCompile Include="QueryManage.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="resource.qrc">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\OSGeo4W\bin\rcc.exe -name $(ProjectName) -o generated\%res_%(Filename).cpp %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">rcc.exe -name $(ProjectName) -o generated\%res_%(Filename).cpp %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">D:\OSGeo4W\apps\Qt5\bin\rcc.exe -name $(ProjectName) -o generated\%res_%(Filename).cpp %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing RCC %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">Performing RCC %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">Performing RCC %(Identity)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">generated\res_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">generated\res_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">generated\res_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\OSGeo4W\bin\rcc.exe -name $(ProjectName) -o generated\%res_%(Filename).cpp %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">C:\OSGeo4W\bin\rcc.exe -name $(ProjectName) -o generated\%res_%(Filename).cpp %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing RCC %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">Performing RCC %(Identity)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">generated\res_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">generated\res_%(Filename).cpp</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="ui_mainwindow.ui">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\OSGeo4W\bin\uic.exe -o generated\%(Filename).h %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">uic.exe -o generated\%(Filename).h %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">D:\OSGeo4W\apps\Qt5\bin\uic.exe -o generated\%(Filename).h %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing uic %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">Performing uic %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">Performing uic %(Identity)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">generated\%(Filename).h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">generated\%(Filename).h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">generated\%(Filename).h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\OSGeo4W\bin\uic.exe -o generated\%(Filename).h %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">C:\OSGeo4W\bin\uic.exe -o generated\%(Filename).h %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing uic %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">Performing uic %(Identity)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">generated\%(Filename).h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">generated\%(Filename).h</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="generated\ui_dlgRasterOpacitySlider.h" />
+    <ClInclude Include="MyAssistant.h" />
+    <CustomBuild Include="MyMapCanvas.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\OSGeo4W\apps\Qt5\bin\moc.exe -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -D_CRT_SECURE_NO_WARNINGS -DQT_DLL -DQT_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"D:\OSGeo4W\apps\Qt5\include\QtCore" -I"D:\OSGeo4W\apps\Qt5\include\QtGui" -I"D:\OSGeo4W\apps\Qt5\include" -D_MSC_VER=1900 -DWIN32 %(Identity) -o generated\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">D:\OSGeo4W\apps\Qt5\bin\moc.exe -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -D_CRT_SECURE_NO_WARNINGS -DQT_DLL -DQT_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"D:\OSGeo4W\apps\Qt5\include\QtCore" -I"D:\OSGeo4W\apps\Qt5\include\QtGui" -I"D:\OSGeo4W\apps\Qt5\include" -D_MSC_VER=1900 -DWIN32 %(Identity) -o generated\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">D:\OSGeo4W\apps\Qt5\bin\moc.exe -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -D_CRT_SECURE_NO_WARNINGS -DQT_DLL -DQT_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"D:\OSGeo4W\apps\Qt5\include\QtCore" -I"D:\OSGeo4W\apps\Qt5\include\QtGui" -I"D:\OSGeo4W\apps\Qt5\include" -D_MSC_VER=1900 -DWIN32 %(Identity) -o generated\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\OSGeo4W\apps\Qt5\bin\moc.exe -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -D_CRT_SECURE_NO_WARNINGS -DQT_DLL -DQT_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"D:\OSGeo4W\apps\Qt5\include\QtCore" -I"D:\OSGeo4W\apps\Qt5\include\QtGui" -I"D:\OSGeo4W\apps\Qt5\include" -D_MSC_VER=1900 -DWIN32 %(Identity) -o generated\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">D:\OSGeo4W\apps\Qt5\bin\moc.exe -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -D_CRT_SECURE_NO_WARNINGS -DQT_DLL -DQT_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"D:\OSGeo4W\apps\Qt5\include\QtCore" -I"D:\OSGeo4W\apps\Qt5\include\QtGui" -I"D:\OSGeo4W\apps\Qt5\include" -D_MSC_VER=1900 -DWIN32 %(Identity) -o generated\moc_%(Filename).cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">Performing MOC %(Identity)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">generated\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">D:\OSGeo4W\apps\Qt5\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">Performing MOC %(Identity)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">generated\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">D:\OSGeo4W\apps\Qt5\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="QueryManage.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\OSGeo4W\bin\moc.exe -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -D_CRT_SECURE_NO_WARNINGS -DQT_DLL -DQT_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"C:\OSGeo4W\include\qt4\QtCore" -I"C:\OSGeo4W\include\qt4\QtGui" -I"C:\OSGeo4W\include\qt4" -D_MSC_VER=1600 -DWIN32 %(Identity) -o generated\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">moc.exe -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -D_CRT_SECURE_NO_WARNINGS -DQT_DLL -DQT_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"C:\OSGeo4W\include\qt4\QtCore" -I"C:\OSGeo4W\include\qt4\QtGui" -I"C:\OSGeo4W\include\qt4" -D_MSC_VER=1600 -DWIN32 %(Identity) -o generated\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">D:\OSGeo4W\apps\Qt5\bin\moc.exe -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -D_CRT_SECURE_NO_WARNINGS -DQT_DLL -DQT_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"D:\OSGeo4W\apps\Qt5\include\QtCore" -I"D:\OSGeo4W\apps\Qt5\include\QtGui" -I"D:\OSGeo4W\apps\Qt5\include" -D_MSC_VER=1900 -DWIN32 %(Identity) -o generated\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\OSGeo4W\bin\moc.exe -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -D_CRT_SECURE_NO_WARNINGS -DQT_DLL -DQT_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"C:\OSGeo4W\include\qt4\QtCore" -I"C:\OSGeo4W\include\qt4\QtGui" -I"C:\OSGeo4W\include\qt4" -D_MSC_VER=1600 -DWIN32 %(Identity) -o generated\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">C:\OSGeo4W\bin\moc.exe -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -D_CRT_SECURE_NO_WARNINGS -DQT_DLL -DQT_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"C:\OSGeo4W\include\qt4\QtCore" -I"C:\OSGeo4W\include\qt4\QtGui" -I"C:\OSGeo4W\include\qt4" -D_MSC_VER=1600 -DWIN32 %(Identity) -o generated\moc_%(Filename).cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing MOC %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">Performing MOC %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">Performing MOC %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing MOC %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">Performing MOC %(Identity)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">generated\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">generated\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">generated\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">generated\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">generated\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\OSGeo4W\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">D:\OSGeo4W\apps\Qt5\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">D:\OSGeo4W\apps\Qt5\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\OSGeo4W\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">C:\OSGeo4W\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="MyMainWindow.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\OSGeo4W\bin\moc.exe -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -D_CRT_SECURE_NO_WARNINGS -DQT_DLL -DQT_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"C:\OSGeo4W\include\qt4\QtCore" -I"C:\OSGeo4W\include\qt4\QtGui" -I"C:\OSGeo4W\include\qt4" -D_MSC_VER=1600 -DWIN32 %(Identity) -o generated\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">moc.exe -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -D_CRT_SECURE_NO_WARNINGS -DQT_DLL -DQT_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"C:\OSGeo4W\include\qt4\QtCore" -I"C:\OSGeo4W\include\qt4\QtGui" -I"C:\OSGeo4W\include\qt4" -D_MSC_VER=1600 -DWIN32 %(Identity) -o generated\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">D:\OSGeo4W\apps\Qt5\bin\moc.exe -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -D_CRT_SECURE_NO_WARNINGS -DQT_DLL -DQT_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"D:\OSGeo4W\apps\Qt5\include\QtCore" -I"D:\OSGeo4W\apps\Qt5\include\QtGui" -I"D:\OSGeo4W\apps\Qt5\include" -D_MSC_VER=1900 -DWIN32 %(Identity) -o generated\moc_%(Filename).cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing MOC %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">Performing MOC %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">Performing MOC %(Identity)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">generated\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">generated\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">generated\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\OSGeo4W\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">D:\OSGeo4W\apps\Qt5\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">D:\OSGeo4W\apps\Qt5\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\OSGeo4W\bin\moc.exe -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -D_CRT_SECURE_NO_WARNINGS -DQT_DLL -DQT_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"C:\OSGeo4W\include\qt4\QtCore" -I"C:\OSGeo4W\include\qt4\QtGui" -I"C:\OSGeo4W\include\qt4" -D_MSC_VER=1600 -DWIN32 %(Identity) -o generated\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">C:\OSGeo4W\bin\moc.exe -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -D_CRT_SECURE_NO_WARNINGS -DQT_DLL -DQT_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"C:\OSGeo4W\include\qt4\QtCore" -I"C:\OSGeo4W\include\qt4\QtGui" -I"C:\OSGeo4W\include\qt4" -D_MSC_VER=1600 -DWIN32 %(Identity) -o generated\moc_%(Filename).cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing MOC %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">Performing MOC %(Identity)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">generated\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">generated\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\OSGeo4W\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">C:\OSGeo4W\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="DlgPointCsv.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\OSGeo4W\bin\moc.exe -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -D_CRT_SECURE_NO_WARNINGS -DQT_DLL -DQT_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"C:\OSGeo4W\include\qt4\QtCore" -I"C:\OSGeo4W\include\qt4\QtGui" -I"C:\OSGeo4W\include\qt4" -D_MSC_VER=1600 -DWIN32 %(Identity) -o generated\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">moc.exe -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -D_CRT_SECURE_NO_WARNINGS -DQT_DLL -DQT_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"C:\OSGeo4W\include\qt4\QtCore" -I"C:\OSGeo4W\include\qt4\QtGui" -I"C:\OSGeo4W\include\qt4" -D_MSC_VER=1600 -DWIN32 %(Identity) -o generated\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">D:\OSGeo4W\apps\Qt5\bin\moc.exe -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -D_CRT_SECURE_NO_WARNINGS -DQT_DLL -DQT_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"D:\OSGeo4W\apps\Qt5\include\QtCore" -I"D:\OSGeo4W\apps\Qt5\include\QtGui" -I"D:\OSGeo4W\apps\Qt5\include" -D_MSC_VER=1900 -DWIN32 %(Identity) -o generated\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\OSGeo4W\bin\moc.exe -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -D_CRT_SECURE_NO_WARNINGS -DQT_DLL -DQT_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"C:\OSGeo4W\include\qt4\QtCore" -I"C:\OSGeo4W\include\qt4\QtGui" -I"C:\OSGeo4W\include\qt4" -D_MSC_VER=1600 -DWIN32 %(Identity) -o generated\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">C:\OSGeo4W\bin\moc.exe -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -D_CRT_SECURE_NO_WARNINGS -DQT_DLL -DQT_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"C:\OSGeo4W\include\qt4\QtCore" -I"C:\OSGeo4W\include\qt4\QtGui" -I"C:\OSGeo4W\include\qt4" -D_MSC_VER=1600 -DWIN32 %(Identity) -o generated\moc_%(Filename).cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing MOC %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">Performing MOC %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">Performing MOC %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing MOC %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">Performing MOC %(Identity)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">generated\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">generated\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">generated\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">generated\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">generated\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\OSGeo4W\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">D:\OSGeo4W\apps\Qt5\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">D:\OSGeo4W\apps\Qt5\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\OSGeo4W\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">C:\OSGeo4W\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <ClInclude Include="generated\ui_dlgAbout.h" />
+    <ClInclude Include="generated\ui_dlgPointCsv.h" />
+    <ClInclude Include="generated\ui_mainwindow.h" />
+    <CustomBuild Include="MapToolSelect.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\OSGeo4W\bin\moc.exe -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -D_CRT_SECURE_NO_WARNINGS -DQT_DLL -DQT_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"C:\OSGeo4W\include\qt4\QtCore" -I"C:\OSGeo4W\include\qt4\QtGui" -I"C:\OSGeo4W\include\qt4" -D_MSC_VER=1600 -DWIN32 %(Identity) -o generated\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">moc.exe -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -D_CRT_SECURE_NO_WARNINGS -DQT_DLL -DQT_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"C:\OSGeo4W\include\qt4\QtCore" -I"C:\OSGeo4W\include\qt4\QtGui" -I"C:\OSGeo4W\include\qt4" -D_MSC_VER=1600 -DWIN32 %(Identity) -o generated\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">D:\OSGeo4W\apps\Qt5\bin\moc.exe -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -D_CRT_SECURE_NO_WARNINGS -DQT_DLL -DQT_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"D:\OSGeo4W\apps\Qt5\include\QtCore" -I"D:\OSGeo4W\apps\Qt5\include\QtGui" -I"D:\OSGeo4W\apps\Qt5\include" -D_MSC_VER=1900 -DWIN32 %(Identity) -o generated\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\OSGeo4W\bin\moc.exe -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -D_CRT_SECURE_NO_WARNINGS -DQT_DLL -DQT_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"C:\OSGeo4W\include\qt4\QtCore" -I"C:\OSGeo4W\include\qt4\QtGui" -I"C:\OSGeo4W\include\qt4" -D_MSC_VER=1600 -DWIN32 %(Identity) -o generated\moc_%(Filename).cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">C:\OSGeo4W\bin\moc.exe -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -D_CRT_SECURE_NO_WARNINGS -DQT_DLL -DQT_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"C:\OSGeo4W\include\qt4\QtCore" -I"C:\OSGeo4W\include\qt4\QtGui" -I"C:\OSGeo4W\include\qt4" -D_MSC_VER=1600 -DWIN32 %(Identity) -o generated\moc_%(Filename).cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing MOC %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">Performing MOC %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">Performing MOC %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing MOC %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">Performing MOC %(Identity)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">generated\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">generated\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">generated\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">generated\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">generated\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\OSGeo4W\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">D:\OSGeo4W\apps\Qt5\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">D:\OSGeo4W\apps\Qt5\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\OSGeo4W\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">C:\OSGeo4W\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ui_dlgPointCsv.ui">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\OSGeo4W\bin\uic.exe -o generated\%(Filename).h %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">uic.exe -o generated\%(Filename).h %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">D:\OSGeo4W\apps\Qt5\bin\uic.exe -o generated\%(Filename).h %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\OSGeo4W\bin\uic.exe -o generated\%(Filename).h %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">C:\OSGeo4W\bin\uic.exe -o generated\%(Filename).h %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing uic %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">Performing uic %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">Performing uic %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing uic %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">Performing uic %(Identity)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">generated\%(Filename).h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">generated\%(Filename).h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">generated\%(Filename).h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">generated\%(Filename).h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">generated\%(Filename).h</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ui_dlgAbout.ui">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\OSGeo4W\bin\uic.exe -o generated\%(Filename).h %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">uic.exe -o generated\%(Filename).h %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">D:\OSGeo4W\apps\Qt5\bin\uic.exe -o generated\%(Filename).h %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\OSGeo4W\bin\uic.exe -o generated\%(Filename).h %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">C:\OSGeo4W\bin\uic.exe -o generated\%(Filename).h %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing uic %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">Performing uic %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">Performing uic %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing uic %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">Performing uic %(Identity)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">generated\%(Filename).h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">generated\%(Filename).h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">generated\%(Filename).h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">generated\%(Filename).h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">generated\%(Filename).h</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WindowIcon.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="doc\qgis_lrs_help.qhcp">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\OSGeo4W\bin\qcollectiongenerator -o doc/$(TargetName)_help.qhc %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">D:\OSGeo4W\apps\Qt5\bin\qcollectiongenerator -o doc/$(TargetName)_help.qhc %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">D:\OSGeo4W\apps\Qt5\bin\qcollectiongenerator -o doc/$(TargetName)_help.qhc %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing qcollectiongenerator %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">Performing qcollectiongenerator %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">Performing qcollectiongenerator %(Identity)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(TargetName)_help.qhc</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">$(TargetName)_help.qhc</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">$(TargetName)_help.qhc</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">C:\OSGeo4W\bin\qcollectiongenerator -o doc/$(TargetName)_help.qhc %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">Performing qcollectiongenerator %(Identity)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">$(TargetName)_help.qhc</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\OSGeo4W\bin\qcollectiongenerator -o doc/$(TargetName)_help.qhc %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing qcollectiongenerator %(Identity)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(TargetName)_help.qhc</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="doc\qgis_lrs_help.qhp">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\OSGeo4W\bin\qhelpgenerator.exe -o doc/$(TargetName)_help.qch %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">D:\OSGeo4W\apps\Qt5\bin\qhelpgenerator.exe -o doc/$(TargetName)_help.qch %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">D:\OSGeo4W\apps\Qt5\bin\qhelpgenerator.exe -o doc/$(TargetName)_help.qch %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing qhelpgenerator %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">Performing qhelpgenerator %(Identity)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">Performing qhelpgenerator %(Identity)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(TargetName)_help.qch</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_3.0|Win32'">$(TargetName)_help.qch</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_3.0|Win32'">$(TargetName)_help.qch</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">C:\OSGeo4W\bin\qhelpgenerator.exe -o doc/$(TargetName)_help.qch %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">Performing qhelpgenerator %(Identity)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_new|Win32'">$(TargetName)_help.qch</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\OSGeo4W\bin\qhelpgenerator.exe -o doc/$(TargetName)_help.qch %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing qhelpgenerator %(Identity)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(TargetName)_help.qch</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="..\..\..\Visualizers\qt5.natvis" />
+    <Natvis Include="..\qt4.natvis" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

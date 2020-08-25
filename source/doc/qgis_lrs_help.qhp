@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+	<namespace>gov.maff.qgis_maff</namespace>
+	<virtualFolder>doc</virtualFolder>
+	<filterSection>
+		<toc>
+			<section title="河川土地利用算定プログラム　マニュアル" ref="index.html">
+				<section title="河川土地利用算定プログラム　概要" ref="summary.html"></section>
+				<section title="インストールと起動" ref="install.html"></section>
+			</section>
+			<section title="画面操作" ref="mapcontrol.html">
+				<section title="拡大、縮小、移動" ref="mapcontrol.html"></section>
+				<section title="レイヤの表示／非表示" ref="references.html"></section>
+			</section>
+			<section title="土地利用の算定" ref="query_panel.html">
+				<section title="マップ上で指定" ref="query_panel.html"></section>
+				<section title="地点ファイルの読み込み・算定" ref="query_area.html"></section>
+			</section>
+      <section title="その他">
+        <section title="ヘルプ、プログラム情報の表示" ref="info_and_help.html"></section>
+      </section>
+			<section title="著作権、ライセンス、免責事項" ref="license.html">
+			</section>
+		</toc>
+		<keywords>
+			<keyword name="目次" ref="index.html"/>
+			<keyword name="概要" ref="summary.html"/>
+			<keyword name="動作条件" ref="install.html"/>
+			<keyword name="インストール" ref="install.html"/>
+			<keyword name="アンインストール" ref="install.html"/>
+			<keyword name="起動" ref="install.html"/>
+			<keyword name="終了" ref="install.html"/>
+			<keyword name="メイン画面" ref="main.html"/>
+			<keyword name="拡大" ref="mapcontrol.html"/>
+			<keyword name="縮小" ref="mapcontrol.html"/>
+			<keyword name="移動" ref="mapcontrol.html"/>
+			<keyword name="全体表示" ref="mapcontrol.html"/>
+			<keyword name="参照レイヤー" ref="layercontrol.html"/>
+			<keyword name="算定実行" ref="query_point.html"/>
+			<keyword name="算定結果表示" ref="query_point.html"/>
+			<keyword name="算定結果保存" ref="query_point.html" />
+			<keyword name="CSV" ref="query_file.html"/>
+      <keyword name="ヘルプ" ref="info_and_help.html"/>
+			<keyword name="著作権" ref="license.html"/>
+			<keyword name="ライセンス" ref="license.html"/>
+			<keyword name="免責事項" ref="license.html"/>
+		</keywords>
+		<files>
+			<file>index.html</file>
+			<file>info_and_help.html</file>
+      <file>install.html</file>
+			<file>layercontrol.html</file>
+      <file>license.html</file>
+			<file>mapcontrol.html</file>
+			<file>query_file.html</file>
+			<file>query_point.html</file>
+			<file>summary.html</file>
+			<file>img/exittool.png</file>
+			<file>img/fittool.png</file>
+			<file>img/helptool.png</file>
+			<file>img/infotool.png</file>
+			<file>img/legend.png</file>
+			<file>img/pan.png</file>
+			<file>img/pantool.png</file>
+			<file>img/pointtool.png</file>
+			<file>img/query_result.png</file>
+			<file>img/result_window.png</file>
+      <file>img/verinfo.png</file>
+			<file>img/window.png</file>
+      <file>img/zoomin.png</file>
+      <file>img/zoomintool.png</file>
+      <file>img/zoomouttool.png</file>
+      <file>img/filetool.png</file>
+      <file>img/filedialog.png</file>
+    </files>
+	</filterSection>
+</QtHelpProject>

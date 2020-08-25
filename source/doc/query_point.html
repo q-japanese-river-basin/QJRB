@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>マップ上で指定</title>
+</head>
+<body>
+
+<h1>マップ上で指定</h1>
+
+<p>
+土地利用の算定を行うには、マップキャンバス上で算定の起点を指定する方法と地点が記述されたファイルを読み込む方法があります。
+</p>
+<p>
+マップキャンバスから起点を指定するには、以下のボタンを押したのち、マップキャンバス上をクリックします。
+</p>
+
+<img src="img/pointtool.png" alt="地点を指定ツール" />
+
+<p>
+キャンバス上をクリックすると、その地点の直近にある河川の上流を検索し、上流の土地利用メッシュを集計して、集計ウィンドウに表示します。
+また、集計対象となった支流域の領域が着色されて表示されます。
+ただし、指定地点から河川までの距離が１００ｍ以内にない場合は集計は行いません。
+</p>
+
+<img src="img/query_result.png" alt="集計結果" />
+
+<h2>集計結果の保存</h2>
+
+<p>
+集計結果をファイルに保存するには、算定結果ウィンドウにある下記のボタンを押します。
+</p>
+
+<img src="img/result_window.png" alt="算定結果ウィンドウ" />
+<br /><br />
+
+保存結果は下記のようなCSVファイルとして保存されます。
+<br /><br />
+
+<table cellspacing="0" border="1">
+	<colgroup width="199"></colgroup>
+	<colgroup width="89"></colgroup>
+	<colgroup width="96"></colgroup>
+	<tr>
+		<td height="26" align="left">指定地点座標</td>
+		<td align="right" sdval="139.867" sdnum="1041;"><font face="Liberation Sans">139.867</font></td>
+		<td align="right" sdval="35.3328" sdnum="1041;"><font face="Liberation Sans">35.3328</font></td>
+	</tr>
+	<tr>
+		<td height="26" align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="26" align="left">土地利用集計結果：</td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="26" align="left">田</td>
+		<td align="right" sdval="86158" sdnum="1041;"><font face="Liberation Sans">86158</font></td>
+		<td align="right" sdval="89.4441791416648" sdnum="1041;"><font face="Liberation Sans">89.4441791417</font></td>
+	</tr>
+	<tr>
+		<td height="26" align="left">その他農用地</td>
+		<td align="right" sdval="408" sdnum="1041;"><font face="Liberation Sans">408</font></td>
+		<td align="right" sdval="0.423561655212508" sdnum="1041;"><font face="Liberation Sans">0.4235616552</font></td>
+	</tr>
+	<tr>
+		<td height="26" align="left">森林</td>
+		<td align="right" sdval="8358" sdnum="1041;"><font face="Liberation Sans">8358</font></td>
+		<td align="right" sdval="8.67678508398563" sdnum="1041;"><font face="Liberation Sans">8.676785084</font></td>
+	</tr>
+	<tr>
+		<td height="26" align="left">荒地</td>
+		<td align="right" sdval="442" sdnum="1041;"><font face="Liberation Sans">442</font></td>
+		<td align="right" sdval="0.45885845981355" sdnum="1041;"><font face="Liberation Sans">0.4588584598</font></td>
+	</tr>
+	<tr>
+		<td height="26" align="left">建物用地</td>
+		<td align="right" sdval="521" sdnum="1041;"><font face="Liberation Sans">521</font></td>
+		<td align="right" sdval="0.540871623445383" sdnum="1041;"><font face="Liberation Sans">0.5408716234</font></td>
+	</tr>
+	<tr>
+		<td height="26" align="left">道路</td>
+		<td align="right" sdval="12" sdnum="1041;"><font face="Liberation Sans">12</font></td>
+		<td align="right" sdval="0.0124576957415443" sdnum="1041;"><font face="Liberation Sans">0.0124576957</font></td>
+	</tr>
+	<tr>
+		<td height="26" align="left">鉄道</td>
+		<td align="right" sdval="0" sdnum="1041;"><font face="Liberation Sans">0</font></td>
+		<td align="right" sdval="0" sdnum="1041;"><font face="Liberation Sans">0</font></td>
+	</tr>
+	<tr>
+		<td height="26" align="left">その他の用地</td>
+		<td align="right" sdval="23" sdnum="1041;"><font face="Liberation Sans">23</font></td>
+		<td align="right" sdval="0.0238772501712933" sdnum="1041;"><font face="Liberation Sans">0.0238772502</font></td>
+	</tr>
+	<tr>
+		<td height="26" align="left">河川地及び湖沼</td>
+		<td align="right" sdval="186" sdnum="1041;"><font face="Liberation Sans">186</font></td>
+		<td align="right" sdval="0.193094283993937" sdnum="1041;"><font face="Liberation Sans">0.193094284</font></td>
+	</tr>
+	<tr>
+		<td height="26" align="left">海浜</td>
+		<td align="right" sdval="0" sdnum="1041;"><font face="Liberation Sans">0</font></td>
+		<td align="right" sdval="0" sdnum="1041;"><font face="Liberation Sans">0</font></td>
+	</tr>
+	<tr>
+		<td height="26" align="left">海水域</td>
+		<td align="right" sdval="0" sdnum="1041;"><font face="Liberation Sans">0</font></td>
+		<td align="right" sdval="0" sdnum="1041;"><font face="Liberation Sans">0</font></td>
+	</tr>
+	<tr>
+		<td height="26" align="left">ゴルフ場</td>
+		<td align="right" sdval="218" sdnum="1041;"><font face="Liberation Sans">218</font></td>
+		<td align="right" sdval="0.226314805971389" sdnum="1041;"><font face="Liberation Sans">0.226314806</font></td>
+	</tr>
+	<tr>
+		<td height="26" align="left">解析範囲外</td>
+		<td align="right" sdval="0" sdnum="1041;"><font face="Liberation Sans">0</font></td>
+		<td align="right" sdval="0" sdnum="1041;"><font face="Liberation Sans">0</font></td>
+	</tr>
+</table>
+
+</body>
+</html>
