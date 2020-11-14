@@ -3,7 +3,9 @@
 ## はじめに
 本プログラムは，国土数値情報と農林水産統計，および世界農業センサスを元に構築したデータベースを用いて，河川上任意の地点の上流域の面積，土地利用割合，水稲作付け率，畑地の地目・作目別面積を推定するものです．プログラム開発の詳細については，以下の論文を参照ください．
  
-岩崎亘典・稲生圭哉・上田紘司（2020）河川上流域土地利用算出プログラムの開発と公開，第29回学術研究発表大会論文集
+岩崎亘典・稲生圭哉・上田紘司（2020）河川上流域土地利用算出プログラムの開発と公開，地理情報システム学会第29回学術研究発表大会論文集
+
+Nobusuke IWASAKI, Keiya INAO and Koji UEDA (2020) Development of tool and database for estimating river basin land use. Proceeding of 29th academic research presentation meeting of GIS Association of Japan (CD-ROM). 
 
 ## 動作確認環境
 Windows 10 Pro 64bit版にて動作確認を行いました．また，背景画像表示のために，インターネットへの接続が必要です．
