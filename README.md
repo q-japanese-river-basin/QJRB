@@ -14,7 +14,7 @@ Windows 10 Pro 64bit版にて動作確認を行いました．また，背景画
 
 ## 使用準備および起動
 1. 本レポジトリを[ダウンロード](https://github.com/q-japanese-river-basin/QJRB/archive/master.zip)・解凍し，[programフォルダ](https://github.com/q-japanese-river-basin/QJRB/tree/master/program)をPC上の任意の場所にコピーしてください．その際，ファイルパスに日本語等の2バイト文字が含まれないようにしてください．
-1. [データ配布用サイト（準備中）]()から，背景画像として用いている国土数値情報土地利用細分メッシュラスタ版と，利用したい都道府県のデータファイルをダウンロードしてください．都道府県別のデータファイルは，**lrsX.7z**の様な名前になっています．**X**の部分が，[都道府県JISコード](https://nlftp.mlit.go.jp/ksj/gml/codelist/PrefCd.html)に対応しています．ただし，一桁の場合，0は付されません．
+1. [データ配布用サイト](https://docs.google.com/forms/d/e/1FAIpQLSc0SvKp7vn_gHPNJBpBncvhx-bbwfY35Jb_tfPbBl_ZITe7RQ/viewform)から，背景画像として用いている国土数値情報土地利用細分メッシュラスタ版と，利用したい都道府県のデータファイルをダウンロードしてください．都道府県別のデータファイルは，**lrsX.7z**の様な名前になっています．**X**の部分が，[都道府県JISコード](https://nlftp.mlit.go.jp/ksj/gml/codelist/PrefCd.html)に対応しています．ただし，一桁の場合，0は付されません．
 1. 都道府県別データファイルは，[7-zip形式](https://www.7-zip.org/)で圧縮されています．[LhaForge](https://forest.watch.impress.co.jp/library/software/lhaforge/)等のアプリケーションを使って解凍してください．
 1. 解凍してできた**lrsX.sqlite**ファイルを**lrs.sqlite**とファイル名を変更し，[programフォルダ](https://github.com/q-japanese-river-basin/QJRB/tree/master/program)内のdataフォルダにコピーしてください．また，国土数値情報土地利用細分メッシュラスタ版（luraster.tif）についても，同じくdataフォルダにコピーしてください．
 1. programフォルダ内のqgis_lrs.batダブルクリックすることで，河川流域土地利用算出プログラムが起動します．
