@@ -47,5 +47,5 @@ Windows 10 Pro 64bit版にて動作確認を行いました．また，背景画
 また作付面積は，統計情報を市町村単位で集計し，それを按分して求めたものである．そのため，実際の作付面積と一致しないことに注意が必要です．
 
 ## ライセンス
-プログラムのライセンスは[GNU General Public License v2.0](https://github.com/q-japanese-river-basin/QJRB/blob/master/LICENSE)です．
+プログラムのライセンスは[GNU General Public License v3.0](https://github.com/q-japanese-river-basin/QJRB/blob/master/LICENSE)です．
 データのライセンスは[国土数値情報の非商用](https://nlftp.mlit.go.jp/ksj/other/agreement.html#agree-02)です．
