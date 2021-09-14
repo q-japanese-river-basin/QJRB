@@ -36,11 +36,12 @@ layer is set accordingly. This behaviour can be changed with the
 ADJUST_GEOM_TYPE open option.</p>
 
 <p>MultiPatch files are read and each patch geometry is turned into a
-multi-polygon representation with one polygon per triangle in triangle
-fans and meshes.</p>
+TIN or a GEOMETRYCOLLECTION of TIN representation for fans and meshes.</p>
 
 <p>If a .prj files in old Arc/Info style or new ESRI OGC WKT style is present,
-it will be read and used to associate a projection with features.</p>
+it will be read and used to associate a projection with features. Starting
+with GDAL 2.3, a match will be attempted with the EPSG databases to identify
+the SRS of the .prj with an entry in the catalog.</p>
 
 <p>The read driver assumes that multipart polygons follow the specification,
 that is to say the vertices of outer rings should be oriented clockwise on the
@@ -54,7 +55,7 @@ defined in the OGC Simple Feature convention. </p>
 <p>An attempt is made to read the code page setting in the .cpg file, or as a
 fallback in the LDID/codepage setting from the .dbf file,
 and use it to translate string fields to UTF-8 on read, and back when writing.
-LDID "87 / 0x57" is treated as ISO8859_1 which may not be appropriate.
+LDID "87 / 0x57" is treated as ISO-8859-1 which may not be appropriate.
 The SHAPE_ENCODING <a href="http://trac.osgeo.org/gdal/wiki/ConfigOptions">
 configuration option</a> may be used to override the encoding interpretation
 of the shapefile with any encoding supported by CPLRecode or to "" to avoid

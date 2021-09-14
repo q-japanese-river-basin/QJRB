@@ -11,7 +11,7 @@ This driver implements read and write access for spatial data in
 <a href="http://www.mysql.org/">MySQL</a> tables.  This functionality
 was introduced in GDAL/OGR 1.3.2.  <p>
 
-When opening a database, it's name should be specified in the form
+When opening a database, its name should be specified in the form
 "MYSQL:dbname[,options]" where the options can include comma separated
 items like "user=*userid*", "password=*password*", "host=*host*" and
 "port=*port*".<p>
@@ -66,6 +66,8 @@ method, as name of the SQL dialect.</p>
         <i>spatial_ref_sys</i> table is <b>not</b> pre-populated with SRS and
         EPSG values like PostGIS.  If no EPSG code is found for a given table,
         the MAX(SRID) value will be used.
+        With MySQL 8.0 or later, the <i>ST_SPATIAL_REFERENCE_SYSTEMS</i> table
+        provided by the database is used instead of <i>spatial_ref_sys</i>.
     </li>
 
 	<li>
