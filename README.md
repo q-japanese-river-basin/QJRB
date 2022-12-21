@@ -5,9 +5,13 @@
 本ツールは，平成 25～27 年度環境省委託業務「農薬水域生態リスクの新たな評価手法確立事業（調査研究）」および平成 30～31 年度環境省請負業務「農薬の水域生態リスク管理手法の確立業務」において開発したものです．関係諸氏に感謝します．  
 ツールおよびデータの詳細については，以下の論文を参照ください．  
  
-岩崎亘典・稲生圭哉・上田紘司（2020）河川上流域土地利用算出プログラムの開発と公開，地理情報システム学会第29回学術研究発表大会論文集
+[岩崎亘典・稲生圭哉・上田紘司（2022）FOSS4Gを用いた河川流域・農業的土地利用データベースの構築および土地利用算定ツールの開発. GIS－理論と応用、30(1), pp.1-9.](https://researchmap.jp/read0059093/published_papers/40771721)
 
-Nobusuke IWASAKI, Keiya INAO and Koji UEDA (2020) Development of tool and database for estimating river basin land use. Proceeding of 29th academic research presentation meeting of GIS Association of Japan (CD-ROM). 
+[Nobusuke IWASAKI, Keiya INAO and Koji UEDA (2022) Development of agricultural land use database of river basins and land use area calculating tool using FOSS4G. Theory and Applications of GIS, 30(1), pp.1-9.](https://researchmap.jp/read0059093/published_papers/40771721)
+
+本ツールにより算定した河川流域面積及び土地利用等を使用する場合、例えば以下のように出典を記載し、上記論文を引用して頂ければ幸いです。
+
+`土地利用面積の算定には、岩崎ら（2022）により公開されているツールを用いた。`
 
 ## 動作確認環境
 Windows 10 Pro 64bit版にて動作確認を行いました．また，背景画像表示のために，インターネットへの接続が必要です．
