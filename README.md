@@ -22,6 +22,9 @@ Windows 10 Pro 64bit版にて動作確認を行いました．また，背景画
 1. 都道府県別データファイルは，[7-zip形式](https://www.7-zip.org/)で圧縮されています．[LhaForge](https://forest.watch.impress.co.jp/library/software/lhaforge/)等のアプリケーションを使って解凍してください．
 1. 解凍してできた**lrsX.sqlite**ファイルを**lrs.sqlite**とファイル名を変更し，[programフォルダ](https://github.com/q-japanese-river-basin/QJRB/tree/master/program)内のdataフォルダにコピーしてください．また，国土数値情報土地利用細分メッシュラスタ版（luraster.tif）についても，同じくdataフォルダにコピーしてください．
 1. programフォルダ内のqgis_lrs.batダブルクリックすることで，河川流域土地利用算出プログラムが起動します．
+1. 上記手順を実行し、`「msvcr100.dllが見つかりません」`というエラーが出た場合、以下のリンクから「Microsoft Visual C++ 2010 Service Pack 1 再頒布可能パッケージ」の「vcredist_x86.exe」をダウンロード、インストールして下さい。  
+[Microsoft Visual C++ 2010 Service Pack 1 再頒布可能パッケージ MFC のセキュリティ更新プログラム](https://www.microsoft.com/ja-JP/download/details.aspx?id=26999)。
+1. その他、起動市内、ダウンロードできない等の問題がある場合、[issue](https://github.com/q-japanese-river-basin/QJRB/issues)にご質問下さい。  
 
 ## 使用方法
 プログラムの起動画面は，下の図の通りです．
